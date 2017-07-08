@@ -339,6 +339,7 @@ namespace howtowrite {
 		}	
 
 		short status = 0, pos =0;
+		if(buffer.front() == '+' || buffer.front() == '-') pos++;
 		while (buffer.size() > pos && (isdigit(buffer[pos++]) || buffer[pos - 1] == '.' && status++ == 0));
 		status =pos == buffer.size() ? status : -1;
 
