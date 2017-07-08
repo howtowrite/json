@@ -10,6 +10,7 @@ You can read it:
 ```cpp
 #include<ifstream>
 #include"json.hpp"
+using namespace howtowrite;
 ...
 json j;
 file >> j;
@@ -17,11 +18,8 @@ file >> j;
 
 And you can show it:
 ```cpp
-#include<ifstream>
-#include<iostream>
-#include"json.hpp"
 ...
-json j;
-file >> j;
+#include<iostream>
+...
 std::cout << j;
 ```
